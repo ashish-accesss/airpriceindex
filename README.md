@@ -728,7 +728,7 @@ Storage
 Analysis
 ```
 
-Important quality checks include:
+ quality checks include:
 
 - Missing values
 - Invalid prices
@@ -928,7 +928,7 @@ Integrate
 Next Component
 ```
 
-This approach was particularly important for the scraping system.
+This approach was particularly  for the scraping system.
 
 Individual extraction steps were tested before being integrated into the larger workflow.
 
@@ -1022,7 +1022,7 @@ Expose standardized outputs suitable for integration into statistical systems, s
 
 ---
 
-# ⚠️ Limitations and Important Notes
+# ⚠️ Limitations and  Notes
 
 This repository represents a **working SIH project/prototype implementation**.
 
@@ -1071,7 +1071,6 @@ It should not be interpreted as an official replacement for the Government of In
 | <img src="public/team/vineet.jpeg" width="90"/> | **Vineet Lunthi** | Full Stack Developer & Optimization |
 | <img src="public/team/satyam.jpeg" width="90"/> | **Satyam Singh** | Data & Database · SQL & Designing |
 
-> **Important:** These image paths work when the README is rendered inside the GitHub repository because the images are stored in `public/team/`.
 
 ---
 
