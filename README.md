@@ -6,42 +6,38 @@
 
 > **Development of a Real-time Airfare Price Index for India through Automated Web Scraping of Airline and Online Travel Aggregator Portals for Augmentation of the Consumer Price Index (CPI).**
 
-
-
-\
-
 ---
 
 ## 📌 Table of Contents
 
-* [Project Overview](#-project-overview)
-* [SIH Problem Statement](#-sih-problem-statement)
-* [Why This Problem Matters](#-why-this-problem-matters)
-* [Our Proposed Solution](#-our-proposed-solution)
-* [Core Objectives](#-core-objectives)
-* [End-to-End System Flow](#-end-to-end-system-flow)
-* [System Architecture](#-system-architecture)
-* [Data Collection](#-data-collection-layer)
-* [Data Cleaning and Normalization](#-data-cleaning-and-normalization)
-* [Database Layer](#-database-layer)
-* [Airfare Price Index](#-airfare-price-index-engine)
-* [Backend and REST APIs](#-backend-and-rest-apis)
-* [Frontend Dashboard](#-frontend-dashboard)
-* [PDF Reports](#-reports-and-pdf-generation)
-* [Automation](#-automation-and-scheduling)
-* [Deployment](#-deployment)
-* [Technology Stack](#-technology-stack)
-* [Data Quality](#-data-quality-and-reliability)
-* [Responsible Data Collection](#-ethical-and-responsible-data-collection)
-* [Team](#-project-team)
-* [Individual Contributions](#-individual-contributions)
-* [Learning Outcomes](#-learning-outcomes)
-* [Local Setup](#-local-setup)
-* [Project Structure](#-project-structure)
-* [API Reference](#-api-reference)
-* [Future Scope](#-future-scope)
-* [Limitations](#-limitations-and-important-notes)
-* [References](#-research-and-references)
+- [Project Overview](#-project-overview)
+- [SIH Problem Statement](#-sih-problem-statement)
+- [Why This Problem Matters](#-why-this-problem-matters)
+- [Our Proposed Solution](#-our-proposed-solution)
+- [Core Objectives](#-core-objectives)
+- [End-to-End System Flow](#-end-to-end-system-flow)
+- [System Architecture](#-system-architecture)
+- [Data Collection](#-data-collection-layer)
+- [Data Cleaning and Normalization](#-data-cleaning-and-normalization)
+- [Database Layer](#-database-layer)
+- [Airfare Price Index](#-airfare-price-index-engine)
+- [Backend and REST APIs](#-backend-and-rest-apis)
+- [Frontend Dashboard](#-frontend-dashboard)
+- [PDF Reports](#-reports-and-pdf-generation)
+- [Automation](#-automation-and-scheduling)
+- [Deployment](#-deployment)
+- [Technology Stack](#-technology-stack)
+- [Data Quality](#-data-quality-and-reliability)
+- [Responsible Data Collection](#-ethical-and-responsible-data-collection)
+- [Team](#-project-team)
+- [Individual Contributions](#-individual-contributions)
+- [Learning Outcomes](#-learning-outcomes)
+- [Local Setup](#-local-setup)
+- [Project Structure](#-project-structure)
+- [API Reference](#-api-reference)
+- [Future Scope](#-future-scope)
+- [Limitations](#-limitations-and-important-notes)
+- [References](#-research-and-references)
 
 ---
 
@@ -105,11 +101,9 @@ APIx is therefore designed as a **complete data pipeline**, rather than simply a
 
 The SIH problem statement identifies the need for an automated and scalable system capable of collecting airfare information from airline websites and Online Travel Aggregators, cleaning and normalizing the collected observations, and computing a real-time airfare price index.
 
-It also emphasizes the dynamic nature of Indian airfare pricing and the need for a higher-frequency representation of the prices actually encountered by travellers.
+### Official / Reference Source
 
-### Official/Reference Source
-
-[SIH26056 Problem Statement Reference](https://sih.gov.in/sih2026PS)
+https://sih.gov.in/sih2026PS
 
 ---
 
@@ -119,17 +113,17 @@ Airfares are dynamic rather than static.
 
 The fare available to a traveller can change depending on several factors, including:
 
-* Route
-* Airline
-* Departure date
-* Advance booking period
-* Day of week
-* Demand
-* Seasonal conditions
-* Availability
-* Fare inventory
-* Taxes and charges
-* Other market conditions
+- Route
+- Airline
+- Departure date
+- Advance booking period
+- Day of week
+- Demand
+- Seasonal conditions
+- Availability
+- Fare inventory
+- Taxes and charges
+- Other market conditions
 
 The SIH problem statement specifically points toward the requirement for automated, scalable and high-frequency airfare data collection.
 
@@ -187,13 +181,13 @@ The processed data is exposed through API endpoints.
 
 The frontend presents:
 
-* Price information
-* Route-level data
-* Search functionality
-* Analytics
-* Charts
-* Historical information
-* Project documentation
+- Price information
+- Route-level data
+- Search functionality
+- Analytics
+- Charts
+- Historical information
+- Project documentation
 
 ### 7. Report Generation
 
@@ -205,24 +199,22 @@ The platform can transform analytical information into structured reports/PDF ou
 
 The project aims to:
 
-* Automate airfare data collection.
-* Reduce dependency on manual price observation.
-* Capture airfare changes over time.
-* Normalize heterogeneous fare records.
-* Maintain historical observations.
-* Provide route-level analytics.
-* Calculate a reproducible airfare price index.
-* Provide API-based access to processed data.
-* Present the results through an accessible dashboard.
-* Support structured report generation.
-* Build an architecture that can be automated and scaled.
-* Maintain traceability between observations and analytical results.
+- Automate airfare data collection.
+- Reduce dependency on manual price observation.
+- Capture airfare changes over time.
+- Normalize heterogeneous fare records.
+- Maintain historical observations.
+- Provide route-level analytics.
+- Calculate a reproducible airfare price index.
+- Provide API-based access to processed data.
+- Present the results through an accessible dashboard.
+- Support structured report generation.
+- Build an architecture that can be automated and scaled.
+- Maintain traceability between observations and analytical results.
 
 ---
 
 # 🔄 End-to-End System Flow
-
-The complete conceptual pipeline is:
 
 ```text
 ┌──────────────────────────────┐
@@ -277,65 +269,65 @@ The application is divided into logical layers.
 
 Responsible for:
 
-* Accessing supported fare sources.
-* Searching specified routes.
-* Collecting flight/fare observations.
-* Capturing relevant metadata.
-* Recording collection timestamps.
+- Accessing supported fare sources.
+- Searching specified routes.
+- Collecting flight/fare observations.
+- Capturing relevant metadata.
+- Recording collection timestamps.
 
 ## Layer 2 — Data Processing
 
 Responsible for:
 
-* Cleaning raw records.
-* Standardizing fields.
-* Handling missing values.
-* Validating prices.
-* Removing duplicate observations.
-* Converting values into consistent formats.
+- Cleaning raw records.
+- Standardizing fields.
+- Handling missing values.
+- Validating prices.
+- Removing duplicate observations.
+- Converting values into consistent formats.
 
 ## Layer 3 — Storage
 
 Responsible for:
 
-* Historical observations.
-* Route information.
-* Airport information.
-* Airline information.
-* Price history.
-* Index-related data.
+- Historical observations.
+- Route information.
+- Airport information.
+- Airline information.
+- Price history.
+- Index-related data.
 
 ## Layer 4 — Analytics
 
 Responsible for:
 
-* Fare statistics.
-* Route comparisons.
-* Price movement.
-* Index calculation.
-* Historical analysis.
+- Fare statistics.
+- Route comparisons.
+- Price movement.
+- Index calculation.
+- Historical analysis.
 
 ## Layer 5 — API
 
 Responsible for:
 
-* Exposing structured data.
-* Connecting frontend and data-processing logic.
-* Returning JSON responses.
-* Providing a reusable interface for future consumers.
+- Exposing structured data.
+- Connecting frontend and data-processing logic.
+- Returning JSON responses.
+- Providing a reusable interface for future consumers.
 
 ## Layer 6 — Presentation
 
 Responsible for:
 
-* Dashboard.
-* Charts.
-* Tables.
-* Route analysis.
-* Price-index visualization.
-* Project documentation.
-* Team information.
-* Reports.
+- Dashboard.
+- Charts.
+- Tables.
+- Route analysis.
+- Price-index visualization.
+- Project documentation.
+- Team information.
+- Reports.
 
 ---
 
@@ -397,11 +389,11 @@ The processing layer therefore performs several operations.
 
 Records can be checked for:
 
-* Missing route information.
-* Invalid prices.
-* Missing dates.
-* Invalid timestamps.
-* Incomplete flight records.
+- Missing route information.
+- Invalid prices.
+- Missing dates.
+- Invalid timestamps.
+- Incomplete flight records.
 
 ## Normalization
 
@@ -451,13 +443,13 @@ The project also used local CockroachDB tooling during development. Database cre
 
 The database is intended to support:
 
-* Flight records
-* Fare observations
-* Routes
-* Airports
-* Airlines
-* Historical prices
-* Index-related information
+- Flight records
+- Fare observations
+- Routes
+- Airports
+- Airlines
+- Historical prices
+- Index-related information
 
 A conceptual observation structure is:
 
@@ -476,10 +468,10 @@ Observation
 
 Historical records make it possible to answer questions such as:
 
-* How did fares change?
-* Which routes experienced the largest changes?
-* How does fare vary with booking lead time?
-* How does the current index compare with the base period?
+- How did fares change?
+- Which routes experienced the largest changes?
+- How does fare vary with booking lead time?
+- How does the current index compare with the base period?
 
 ---
 
@@ -552,21 +544,21 @@ The web application is built using **Next.js and TypeScript**.
 
 The dashboard brings the different components together and provides:
 
-* Price-index information
-* Fare search
-* Route analytics
-* Charts
-* Historical analysis
-* Reports
-* About-project documentation
-* Team information
+- Price-index information
+- Fare search
+- Route analytics
+- Charts
+- Historical analysis
+- Reports
+- About-project documentation
+- Team information
 
 The interface was also designed to be responsive across:
 
-* Desktop
-* Laptop
-* Tablet
-* Mobile
+- Desktop
+- Laptop
+- Tablet
+- Mobile
 
 ---
 
@@ -578,12 +570,12 @@ The report layer is intended to make the data useful beyond the live dashboard.
 
 It can be used for:
 
-* Reviewing index results
-* Sharing analytical summaries
-* Route-level information
-* Historical comparisons
-* Preserving analytical outputs
-* Project demonstrations
+- Reviewing index results
+- Sharing analytical summaries
+- Route-level information
+- Historical comparisons
+- Preserving analytical outputs
+- Project demonstrations
 
 The report is generated from application data rather than being a manually written static document.
 
@@ -647,7 +639,7 @@ Live Application
 
 ### Live Project
 
-[https://airpriceindex-zeta.vercel.app/](https://airpriceindex-zeta.vercel.app/)
+https://www.airpriceindex.in
 
 ---
 
@@ -657,13 +649,13 @@ The frontend includes responsive layouts for different screen sizes.
 
 Responsive behavior includes:
 
-* Desktop navigation
-* Mobile navigation
-* Responsive cards
-* Responsive workflow sections
-* Responsive team section
-* Flexible dashboard layouts
-* Mobile-friendly project documentation
+- Desktop navigation
+- Mobile navigation
+- Responsive cards
+- Responsive workflow sections
+- Responsive team section
+- Flexible dashboard layouts
+- Mobile-friendly project documentation
 
 The objective is to keep the application usable rather than simply shrinking the desktop layout.
 
@@ -673,42 +665,42 @@ The objective is to keep the application usable rather than simply shrinking the
 
 ## Frontend
 
-* Next.js
-* React
-* TypeScript
-* HTML
-* CSS
-* Responsive UI
-* Data visualization
+- Next.js
+- React
+- TypeScript
+- HTML
+- CSS
+- Responsive UI
+- Data visualization
 
 ## Backend / API
 
-* Next.js App Router API routes
-* TypeScript
-* REST-style API architecture
+- Next.js App Router API routes
+- TypeScript
+- REST-style API architecture
 
 ## Data
 
-* SQL
-* Relational database concepts
-* Fare observations
-* Data cleaning
-* Data normalization
-* Historical records
+- SQL
+- Relational database concepts
+- Fare observations
+- Data cleaning
+- Data normalization
+- Historical records
 
 ## Scraping / Automation
 
-* Automated web scraping
-* Dynamic-page extraction
-* Collection workflow
-* Scheduled execution architecture
+- Automated web scraping
+- Dynamic-page extraction
+- Collection workflow
+- Scheduled execution architecture
 
 ## Infrastructure
 
-* AWS EC2 for automated collection infrastructure
-* Vercel for web deployment
-* Git
-* GitHub
+- AWS EC2 for automated collection infrastructure
+- Vercel for web deployment
+- Git
+- GitHub
 
 ---
 
@@ -738,14 +730,14 @@ Analysis
 
 Important quality checks include:
 
-* Missing values
-* Invalid prices
-* Invalid dates
-* Duplicate observations
-* Unavailable flights
-* Inconsistent route codes
-* Timestamp consistency
-* Source identification
+- Missing values
+- Invalid prices
+- Invalid dates
+- Duplicate observations
+- Unavailable flights
+- Inconsistent route codes
+- Timestamp consistency
+- Source identification
 
 The system should retain sufficient metadata to understand **where and when** an observation was collected.
 
@@ -755,26 +747,23 @@ The system should retain sufficient metadata to understand **where and when** an
 
 Automated collection must respect the rules and restrictions associated with each source.
 
-The SIH problem statement specifically identifies requirements around:
+The collection layer is designed as an independent component so that source connectors can be replaced or extended without redesigning the entire statistical pipeline.
 
-* JavaScript-rendered pages
-* Dynamic anti-bot mechanisms
-* Session management
-* Rate limiting
-* IP-related safeguards
-* `robots.txt`
-* Terms of service
-* Ethical scraping safeguards
+Responsible collection considerations include:
 
-Therefore, the collection layer is designed as an independent component.
-
-This makes it possible to replace or extend source connectors without redesigning the entire statistical pipeline.
+- Source terms of service
+- `robots.txt`
+- Rate limiting
+- Anti-bot safeguards
+- Session management
+- Appropriate request frequency
+- Respect for source restrictions
 
 ---
 
 # 🔐 Configuration and Secrets
 
-Sensitive information should **never be committed to GitHub**.
+Sensitive information should **never** be committed to GitHub.
 
 Examples include:
 
@@ -796,8 +785,6 @@ for local configuration and keep secret files excluded through `.gitignore`.
 ---
 
 # 📁 Project Structure
-
-The major application structure is:
 
 ```text
 airpriceindex/
@@ -837,7 +824,7 @@ airpriceindex/
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/ashish-accesss/airpriceindex.git
+git clone https://github.com/ashish-accesss/airpriceindexx.git
 cd airpriceindexx
 ```
 
@@ -947,13 +934,13 @@ Individual extraction steps were tested before being integrated into the larger 
 
 The same development philosophy was used for:
 
-* Scraping
-* Data processing
-* Database operations
-* APIs
-* Frontend
-* Reports
-* Deployment
+- Scraping
+- Data processing
+- Database operations
+- APIs
+- Frontend
+- Reports
+- Deployment
 
 ---
 
@@ -1004,12 +991,12 @@ Integrate authoritative passenger-volume information where available.
 
 Potential extensions include:
 
-* Fare volatility
-* Route-level inflation
-* Airline comparisons
-* Booking-window analysis
-* Seasonal analysis
-* Historical trend analysis
+- Fare volatility
+- Route-level inflation
+- Airline comparisons
+- Booking-window analysis
+- Seasonal analysis
+- Historical trend analysis
 
 ## Production Automation
 
@@ -1041,13 +1028,13 @@ This repository represents a **working SIH project/prototype implementation**.
 
 A production-grade national statistical system would require additional:
 
-* Statistical validation
-* Institutional review
-* Authoritative weighting data
-* Source agreements/permissions
-* Methodology approval
-* Long-term monitoring
-* Revision and audit procedures
+- Statistical validation
+- Institutional review
+- Authoritative weighting data
+- Source agreements/permissions
+- Methodology approval
+- Long-term monitoring
+- Revision and audit procedures
 
 Therefore, APIx should be understood as a technical implementation demonstrating the complete pipeline:
 
@@ -1073,24 +1060,39 @@ It should not be interpreted as an official replacement for the Government of In
 
 # 👥 Project Team
 
+## Team Members
+
+| Photo | Name | Role |
+|---|---|---|
+| <img src="public/team/souhali.jpeg" width="90"/> | **Souhali Reang** | Team Leader · Graphic Designer & Documentation |
+| <img src="public/team/ashish.jpeg" width="90"/> | **Ashish** | Web Scraping · Automation · Statistics · SQL · Backend & Research |
+| <img src="public/team/aman.jpeg" width="90"/> | **Aman Raj** | Frontend UI · Research · Testing & Documentation |
+| <img src="public/team/shivam.jpeg" width="90"/> | **Shivam Singh** | Research & Methodology · Statistics |
+| <img src="public/team/vineet.jpeg" width="90"/> | **Vineet Lunthi** | Full Stack Developer & Optimization |
+| <img src="public/team/satyam.jpeg" width="90"/> | **Satyam Singh** | Data & Database · SQL & Designing |
+
+> **Important:** These image paths work when the README is rendered inside the GitHub repository because the images are stored in `public/team/`.
+
+---
+
+# 👤 Individual Contributions
+
 ## 1. Souhali Reang
 
 **Team Leader · Graphic Designer & Documentation**
 
-GitHub:
+- Team leadership
+- Team coordination
+- Graphic design
+- Presentation design
+- Documentation
+- Project communication
+
+GitHub:  
 https://github.com/souhalireang-ai
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/souhali-reang-652197385/
-
-### Primary Responsibilities
-
-* Team leadership
-* Team coordination
-* Graphic design
-* Presentation design
-* Documentation
-* Project communication
 
 ---
 
@@ -1098,22 +1100,20 @@ https://www.linkedin.com/in/souhali-reang-652197385/
 
 **Web Scraping · Automation · Statistics · SQL · Backend & Research**
 
-GitHub:
+- Web scraping
+- Automated collection
+- Automation architecture
+- Statistical analysis
+- SQL
+- Backend/API development
+- Research
+- System integration
+
+GitHub:  
 https://github.com/ashish-accesss
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/ashish-access/
-
-### Primary Responsibilities
-
-* Web scraping
-* Automated collection
-* Automation architecture
-* Statistical analysis
-* SQL
-* Backend/API development
-* Research
-* System integration
 
 ---
 
@@ -1121,20 +1121,18 @@ https://www.linkedin.com/in/ashish-access/
 
 **Frontend UI · Research · Testing & Documentation**
 
-GitHub:
+- Frontend UI
+- Responsive design
+- Research
+- Testing
+- Documentation
+- UI validation
+
+GitHub:  
 https://github.com/LexusR27
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/aman-raj-a90158381/
-
-### Primary Responsibilities
-
-* Frontend UI
-* Responsive design
-* Research
-* Testing
-* Documentation
-* UI validation
 
 ---
 
@@ -1142,19 +1140,17 @@ https://www.linkedin.com/in/aman-raj-a90158381/
 
 **Research & Methodology · Statistics**
 
-GitHub:
+- Research
+- Statistical methodology
+- Index-related analysis
+- Analytical interpretation
+- Methodological validation
+
+GitHub:  
 https://github.com/shivamgov13-pixel
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/shivam-singh-a84592381/
-
-### Primary Responsibilities
-
-* Research
-* Statistical methodology
-* Index-related analysis
-* Analytical interpretation
-* Methodological validation
 
 ---
 
@@ -1162,19 +1158,17 @@ https://www.linkedin.com/in/shivam-singh-a84592381/
 
 **Full Stack Developer & Optimization**
 
-GitHub:
+- Full-stack development
+- Application integration
+- Optimization
+- Performance improvements
+- Frontend/backend integration
+
+GitHub:  
 https://github.com/vineet1513
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/vineetlunthi/
-
-### Primary Responsibilities
-
-* Full-stack development
-* Application integration
-* Optimization
-* Performance improvements
-* Frontend/backend integration
 
 ---
 
@@ -1182,20 +1176,18 @@ https://www.linkedin.com/in/vineetlunthi/
 
 **Data & Database · SQL & Designing**
 
-GitHub:
+- Data management
+- Database design
+- SQL
+- Data organization
+- Database-driven features
+- Design support
+
+GitHub:  
 https://github.com/satyamsingh134
 
-LinkedIn:
+LinkedIn:  
 https://www.linkedin.com/in/satyam-singh-922799391
-
-### Primary Responsibilities
-
-* Data management
-* Database design
-* SQL
-* Data organization
-* Database-driven features
-* Design support
 
 ---
 
@@ -1203,55 +1195,53 @@ https://www.linkedin.com/in/satyam-singh-922799391
 
 ### Souhali Reang
 
-* Team coordination
-* Graphic design
-* Technical documentation
-* Visual presentation of technical work
+- Team coordination
+- Graphic design
+- Technical documentation
+- Visual presentation of technical work
 
 ### Ashish
 
-* Web scraping
-* Automation
-* Backend development
-* SQL
-* Statistics
-* REST APIs
-* System integration
+- Web scraping
+- Automation
+- Backend development
+- SQL
+- Statistics
+- REST APIs
+- System integration
 
 ### Aman Raj
 
-* Next.js/React frontend development
-* Responsive UI
-* Testing
-* Documentation
-* Research
+- Next.js/React frontend development
+- Responsive UI
+- Testing
+- Documentation
+- Research
 
 ### Shivam Singh
 
-* Statistical methodology
-* Research
-* Price-index concepts
-* Analytical interpretation
+- Statistical methodology
+- Research
+- Price-index concepts
+- Analytical interpretation
 
 ### Vineet Lunthi
 
-* Full-stack development
-* System integration
-* Optimization
-* Application architecture
+- Full-stack development
+- System integration
+- Optimization
+- Application architecture
 
 ### Satyam Singh
 
-* Database design
-* SQL
-* Data management
-* System organization
+- Database design
+- SQL
+- Data management
+- System organization
 
 ---
 
 # 🤝 Team Workflow
-
-The project combined different technical responsibilities:
 
 ```text
                  PROJECT LEAD
@@ -1291,19 +1281,19 @@ The six members worked across these interconnected stages rather than treating e
 
 **Ministry of Statistics and Programme Implementation (MoSPI)**
 
-[SIH26056 reference](https://sih.gov.in/sih2026PS)
+https://sih.gov.in/sih2026PS
 
 ## MoSPI eSankhyiki
 
-[MoSPI eSankhyiki](https://esankhyiki.mospi.gov.in)
+https://esankhyiki.mospi.gov.in
 
 ## Project Website
 
-[Air Price Index — APIx](https://airpriceindex-zeta.vercel.app/)
+https://www.airpriceindex.in
 
 ## GitHub Repository
 
-[Air Price Index GitHub Repository](https://github.com/ashish-accesss/airpriceindex/)
+https://github.com/ashish-accesss/airpriceindexx
 
 ---
 
