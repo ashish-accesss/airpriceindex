@@ -639,7 +639,7 @@ Live Application
 
 ### Live Project
 
-https://www.airpriceindex.in
+https://airpriceindex-zeta.vercel.app/
 
 ---
 
