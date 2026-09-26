@@ -1288,11 +1288,11 @@ https://esankhyiki.mospi.gov.in
 
 ## Project Website
 
-https://www.airpriceindex.in
+https://airpriceindex-zeta.vercel.app/
 
 ## GitHub Repository
 
-https://github.com/ashish-accesss/airpriceindexx
+https://github.com/ashish-accesss/airpriceindex
 
 ---
 
